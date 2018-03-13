@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mobileapp.sharedpreferencepb4.MainActivity">
+
+    <EditText
+        android:id="@+id/emailValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/passValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="saveUser"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:onClick="showUser"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:onClick="resetUser"/>
+
+    <TextView
+        android:id="@+id/showInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
